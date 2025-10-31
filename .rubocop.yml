@@ -1,0 +1,862 @@
+AllCops:
+  TargetRubyVersion: 2.7
+  DefaultFormatter: simple
+  NewCops: disable
+
+Style/StringLiterals:
+  Enabled: true
+  EnforcedStyle: double_quotes
+
+Style/StringLiteralsInInterpolation:
+  Enabled: true
+  EnforcedStyle: double_quotes
+
+Style/AccessModifierDeclarations:
+  Enabled: true
+  EnforcedStyle: inline
+  AllowModifiersOnSymbols: false
+  AllowModifiersOnAttrs: true
+  AllowModifiersOnAliasMethod: false
+
+Style/AccessorGrouping:
+  Enabled: true
+  EnforcedStyle: separated
+
+Style/Alias:
+  Enabled: true
+  EnforcedStyle: prefer_alias_method
+
+Style/AndOr:
+  Enabled: true
+  EnforcedStyle: always
+
+Style/ArgumentsForwarding:
+  Enabled: true
+
+Style/ArrayCoercion:
+  Enabled: false
+
+Style/AutoResourceCleanup:
+  Enabled: true
+
+Style/BarePercentLiterals:
+  Enabled: true
+  EnforcedStyle: percent_q
+
+Style/BisectedAttrAccessor:
+  Enabled: true
+
+Style/BitwisePredicate:
+  Enabled: false
+
+Style/BlockDelimiters:
+  Enabled: true
+  EnforcedStyle: braces_for_chaining
+
+Style/CaseEquality:
+  Enabled: true
+  AllowOnConstant: false
+  AllowOnSelfClass: true
+
+Style/CaseLikeIf:
+  Enabled: true
+
+Style/CharacterLiteral:
+  Enabled: true
+
+Style/ClassAndModuleChildren:
+  Enabled: true
+  EnforcedStyle: nested
+
+Style/ClassCheck:
+  Enabled: true
+  EnforcedStyle: is_a?
+
+Style/ClassEqualityComparison:
+  Enabled: true
+  AllowedMethods: ==
+
+Style/ClassMethodsDefinitions:
+  Enabled: true
+  EnforcedStyle: def_self
+
+Style/ClassVars:
+  Enabled: true
+
+Style/CollectionCompact:
+  Enabled: true
+
+Style/CollectionMethods:
+  Enabled: true
+
+Style/CollectionQuerying:
+  Enabled: false
+
+Style/ColonMethodCall:
+  Enabled: true
+
+Style/ColonMethodDefinition:
+  Enabled: true
+
+Style/CombinableDefined:
+  Enabled: true
+
+Style/CombinableLoops:
+  Enabled: true
+
+Style/CommandLiteral:
+  Enabled: true
+  EnforcedStyle: percent_x
+  AllowInnerBackticks: false
+
+Style/CommentAnnotation:
+  Enabled: true
+  RequireColon: true
+  Keywords:
+    - TODO
+    - FIXME
+    - REVIEW
+    - NOTE
+    - WARN
+    - DANGER
+
+Style/CommentedKeyword:
+  Enabled: true
+
+Style/ComparableBetween:
+  Enabled: false
+
+Style/ComparableClamp:
+  Enabled: false
+
+Style/ConcatArrayLiterals:
+  Enabled: true
+
+Style/ConditionalAssignment:
+  Enabled: true
+  EnforcedStyle: assign_inside_condition
+
+Style/DataInheritance:
+  Enabled: true
+
+Style/DateTime:
+  Enabled: true
+
+Style/DigChain:
+  Enabled: true
+
+Style/Dir:
+  Enabled: true
+
+Style/DirEmpty:
+  Enabled: true
+
+Style/DisableCopsWithinSourceCodeDirective:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/DocumentationMethod:
+  Enabled: false
+
+Style/DoubleNegation:
+  Enabled: true
+  EnforcedStyle: forbidden
+
+Style/EachForSimpleLoop:
+  Enabled: false
+
+Style/EachWithObject:
+  Enabled: false
+
+Style/EmptyBlockParameter:
+  Enabled: true
+
+Style/EmptyCaseCondition:
+  Enabled: false
+
+Style/EmptyElse:
+  Enabled: true
+  EnforcedStyle: empty
+  AllowComments: true
+
+Style/EmptyHeredoc:
+  Enabled: true
+
+Style/EmptyLambdaParameter:
+  Enabled: false
+
+Style/EmptyLiteral:
+  Enabled: true
+
+Style/EmptyMethod:
+  Enabled: true
+  EnforcedStyle: expanded
+
+Style/EmptyStringInsideInterpolation:
+  Enabled: true
+  EnforcedStyle: ternary
+
+Style/EndlessMethod:
+  Enabled: true
+  EnforcedStyle: disallow
+
+Style/EnvHome:
+  Enabled: false
+
+Style/EvalWithLocation:
+  Enabled: true
+
+Style/EvenOdd:
+  Enabled: true
+
+Style/ExactRegexpMatch:
+  Enabled: false
+
+Style/ExpandPathArguments:
+  Enabled: true
+
+Style/ExplicitBlockArgument:
+  Enabled: true
+
+Style/ExponentialNotation:
+  Enabled: false
+
+Style/FetchEnvVar:
+  Enabled: false
+
+Style/FileEmpty:
+  Enabled: true
+
+Style/FileNull:
+  Enabled: false
+
+Style/FileRead:
+  Enabled: true
+
+Style/FileTouch:
+  Enabled: true
+
+Style/FileWrite:
+  Enabled: true
+
+Style/FloatDivision:
+  Enabled: true
+  EnforcedStyle: single_coerce
+
+Style/For:
+  Enabled: true
+  EnforcedStyle: each
+
+Style/FormatString:
+  Enabled: true
+  EnforcedStyle: sprintf
+
+Style/FormatStringToken:
+  Enabled: true
+  EnforcedStyle: template
+  MaxUnannotatedPlaceholdersAllowed: 3
+  Mode: aggressive
+
+Style/FrozenStringLiteralComment:
+  Enabled: true
+  EnforcedStyle: always_true
+
+Style/GlobalStdStream:
+  Enabled: true
+
+Style/GlobalVars:
+  Enabled: true
+
+Style/GuardClause:
+  Enabled: false
+
+Style/HashAsLastArrayItem:
+  Enabled: true
+  EnforcedStyle: braces
+
+Style/HashConversion:
+  Enabled: true
+  AllowSplatArgument: false
+
+Style/HashEachMethods:
+  Enabled: true
+
+Style/HashExcept:
+  Enabled: false
+
+Style/HashFetchChain:
+  Enabled: true
+
+Style/HashLikeCase:
+  Enabled: true
+  MinBranchesCount: 5
+
+Style/HashSlice:
+  Enabled: true
+
+Style/HashSyntax:
+  Enabled: true
+  EnforcedStyle: ruby19_no_mixed_keys
+  EnforcedShorthandSyntax: never
+  UseHashRocketsWithSymbolValues: false
+  PreferHashRocketsForNonAlnumEndingSymbols: false
+
+Style/HashTransformKeys:
+  Enabled: false
+
+Style/HashTransformValues:
+  Enabled: false
+
+Style/IdenticalConditionalBranches:
+  Enabled: true
+
+Style/IfInsideElse:
+  Enabled: true
+  AllowIfModifier: false
+
+Style/IfUnlessModifier:
+  Enabled: false
+
+Style/IfUnlessModifierOfIfUnless:
+  Enabled: true
+
+Style/IfWithBooleanLiteralBranches:
+  Enabled: true
+
+Style/IfWithSemicolon:
+  Enabled: true
+
+Style/ImplicitRuntimeError:
+  Enabled: true
+
+Style/InPatternThen:
+  Enabled: false
+
+Style/InfiniteLoop:
+  Enabled: false
+
+Style/InlineComment:
+  Enabled: true
+
+Style/InverseMethods:
+  Enabled: true
+
+Style/InvertibleUnlessCondition:
+  Enabled: true
+
+Style/ItAssignment:
+  Enabled: true
+
+Style/ItBlockParameter:
+  Enabled: true
+  EnforcedStyle: disallow
+
+Style/KeywordArgumentsMerging:
+  Enabled: true
+
+Style/KeywordParametersOrder:
+  Enabled: false
+
+Style/Lambda:
+  Enabled: true
+  EnforcedStyle: lambda
+
+Style/LambdaCall:
+  Enabled: true
+  EnforcedStyle: call
+
+Style/LineEndConcatenation:
+  Enabled: true
+
+Style/MagicCommentFormat:
+  Enabled: true
+  EnforcedStyle: snake_case
+  DirectiveCapitalization: lowercase
+  ValueCapitalization: lowercase
+
+Style/MapCompactWithConditionalBlock:
+  Enabled: true
+
+Style/MapIntoArray:
+  Enabled: false
+
+Style/MapToHash:
+  Enabled: true
+
+Style/MapToSet:
+  Enabled: true
+
+Style/MethodCallWithArgsParentheses:
+  Enabled: false
+  # EnforcedStyle: require_parentheses
+  # IgnoreMacros: true
+  # AllowedMethods:
+  #   - grep
+  #   - grep_v
+  #   - is_a?
+  #   # Enumerable specific
+  #   - map
+  #   - map!
+  #   - flat_map
+  #   - find
+  #   - select
+  #   - select!
+  #   - reduce
+  #   # https://docs.ruby-lang.org/en/master/Kernel.html
+  #   # IO
+  #   - puts
+  #   - putc
+  #   - print
+  #   - printf
+  #   - p
+  #   - pp
+  #   - j
+  #   - jj
+  #   # Exceptions
+  #   - raise
+  #   - fail
+  #   # Querying
+  #   - test
+  #   # Exiting
+  #   - abort
+  #   - exit
+  #   - exit!
+  #   # Subprocesses
+  #   - system
+  #   # Other
+  #   - eval
+  #   - sleep
+  #   - sprintf
+  #   - format
+  #   - trap
+  #   - warn
+  # AllowedPatterns:
+  #   - ^assert
+  #   - ^expect
+  # AllowParenthesesInMultilineCall: false
+  # AllowParenthesesInChaining: true
+  # AllowParenthesesInCamelCaseMethod: false
+  # AllowParenthesesInStringInterpolation: false
+
+Style/MethodCallWithoutArgsParentheses:
+  Enabled: true
+
+Style/MethodCalledOnDoEndBlock:
+  Enabled: true
+
+Style/MethodDefParentheses:
+  Enabled: true
+  EnforcedStyle: require_parentheses
+
+Style/MinMax:
+  Enabled: false
+
+Style/MinMaxComparison:
+  Enabled: false
+
+Style/MissingElse:
+  Enabled: true
+  EnforcedStyle: case
+
+Style/MissingRespondToMissing:
+  Enabled: true
+
+Style/MixinGrouping:
+  Enabled: true
+  EnforcedStyle: separated
+
+Style/MixinUsage:
+  Enabled: true
+
+Style/ModuleFunction:
+  Enabled: true
+  EnforcedStyle: extend_self
+  Autocorrect: true
+
+Style/MultilineBlockChain:
+  Enabled: false
+
+Style/MultilineIfModifier:
+  Enabled: true
+
+Style/MultilineIfThen:
+  Enabled: true
+
+Style/MultilineInPatternThen:
+  Enabled: true
+
+Style/MultilineMemoization:
+  Enabled: true
+  EnforcedStyle: braces
+
+Style/MultilineMethodSignature:
+  Enabled: true
+
+Style/MultilineTernaryOperator:
+  Enabled: true
+
+Style/MultilineWhenThen:
+  Enabled: true
+
+Style/MultipleComparison:
+  Enabled: true
+  AllowMethodComparison: true
+  ComparisonsThreshold: 3
+
+Style/MutableConstant:
+  Enabled: true
+  EnforcedStyle: literals
+
+Style/NegatedIf:
+  Enabled: false
+
+Style/NegatedIfElseCondition:
+  Enabled: false
+
+Style/NegatedUnless:
+  Enabled: true
+  EnforcedStyle: both
+
+Style/NegatedWhile:
+  Enabled: false
+
+Style/NestedFileDirname:
+  Enabled: false
+
+Style/Next:
+  Enabled: false
+
+Style/NilComparison:
+  Enabled: true
+  EnforcedStyle: comparison
+
+Style/NilLambda:
+  Enabled: true
+
+Style/NonNilCheck:
+  Enabled: true
+  IncludeSemanticChanges: true
+
+Style/Not:
+  Enabled: true
+
+Style/NumberedParameters:
+  Enabled: true
+  EnforcedStyle: disallow
+
+Style/NumberedParametersLimit:
+  Enabled: true
+  Max: 0
+
+Style/NumericLiteralPrefix:
+  Enabled: true
+  EnforcedOctalStyle: zero_with_o
+
+Style/NumericLiterals:
+  Enabled: true
+
+Style/NumericPredicate:
+  Enabled: true
+  EnforcedStyle: comparison
+
+Style/ObjectThen:
+  Enabled: true
+
+Style/OneLineConditional:
+  Enabled: true
+
+Style/OpenStructUse:
+  Enabled: true
+
+Style/OperatorMethodCall:
+  Enabled: true
+
+Style/OptionHash:
+  Enabled: true
+
+Style/OptionalArguments:
+  Enabled: true
+
+Style/OptionalBooleanParameter:
+  Enabled: true
+
+Style/OrAssignment:
+  Enabled: false
+
+Style/ParallelAssignment:
+  Enabled: true
+
+Style/ParenthesesAroundCondition:
+  Enabled: true
+
+Style/PercentLiteralDelimiters:
+  Enabled: true
+
+Style/PercentQLiterals:
+  Enabled: true
+
+Style/PerlBackrefs:
+  Enabled: true
+
+Style/PreferredHashMethods:
+  Enabled: true
+  EnforcedStyle: verbose
+
+Style/Proc:
+  Enabled: true
+
+Style/QuotedSymbols:
+  Enabled: true
+  EnforcedStyle: same_as_string_literals
+
+Style/RaiseArgs:
+  Enabled: true
+  EnforcedStyle: exploded
+
+Style/RandomWithOffset:
+  Enabled: true
+
+Style/RedundantArgument:
+  Enabled: true
+
+Style/RedundantArrayConstructor:
+  Enabled: true
+
+Style/RedundantArrayFlatten:
+  Enabled: true
+
+Style/RedundantAssignment:
+  Enabled: true
+
+Style/RedundantBegin:
+  Enabled: true
+
+Style/RedundantCapitalW:
+  Enabled: true
+
+Style/RedundantCondition:
+  Enabled: true
+
+Style/RedundantConditional:
+  Enabled: true
+
+Style/RedundantConstantBase:
+  Enabled: true
+
+Style/RedundantCurrentDirectoryInPath:
+  Enabled: false
+
+Style/RedundantDoubleSplatHashBraces:
+  Enabled: true
+
+Style/RedundantEach:
+  Enabled: true
+
+Style/RedundantException:
+  Enabled: false
+
+Style/RedundantFetchBlock:
+  Enabled: true
+  SafeForConstants: true
+
+Style/RedundantFileExtensionInRequire:
+  Enabled: true
+
+Style/RedundantFilterChain:
+  Enabled: true
+
+Style/RedundantFormat:
+  Enabled: true
+
+Style/RedundantHeredocDelimiterQuotes:
+  Enabled: true
+
+Style/RedundantInitialize:
+  Enabled: true
+
+Style/RedundantInterpolation:
+  Enabled: true
+
+Style/RedundantInterpolationUnfreeze:
+  Enabled: true
+
+Style/RedundantLineContinuation:
+  Enabled: true
+
+Style/RedundantRegexpArgument:
+  Enabled: true
+
+Style/RedundantRegexpConstructor:
+  Enabled: true
+
+Style/RedundantReturn:
+  Enabled: false
+
+Style/RedundantSelfAssignment:
+  Enabled: true
+
+Style/RedundantSelfAssignmentBranch:
+  Enabled: false
+
+Style/RedundantStringEscape:
+  Enabled: true
+
+Style/RegexpLiteral:
+  Enabled: true
+  EnforcedStyle: slashes
+  AllowInnerSlashes: true
+
+Style/RequireOrder:
+  Enabled: true
+
+Style/ReturnNil:
+  Enabled: true
+  EnforcedStyle: return_nil
+
+Style/ReturnNilInPredicateMethodDefinition:
+  Enabled: true
+
+Style/SafeNavigation:
+  Enabled: false
+
+Style/Sample:
+  Enabled: true
+
+Style/SelectByRegexp:
+  Enabled: false
+
+Style/SelfAssignment:
+  Enabled: false
+
+Style/SignalException:
+  Enabled: true
+  EnforcedStyle: only_raise
+
+Style/SingleLineDoEndBlock:
+  Enabled: true
+
+Style/SingleLineMethods:
+  Enabled: false
+
+Style/SlicingWithRange:
+  Enabled: true
+
+Style/SoleNestedConditional:
+  Enabled: true
+  AllowModifier: false
+
+Style/StderrPuts:
+  Enabled: false
+
+Style/StringChars:
+  Enabled: false
+
+Style/StringConcatenation:
+  Enabled: true
+  Mode: aggressive
+
+Style/StringHashKeys:
+  Enabled: false
+
+Style/StringMethods:
+  Enabled: true
+  PreferredMethods:
+    to_ary: to_a
+    to_hash: to_h
+    to_int: to_i
+    to_str: to_s
+    intern: to_sym
+    enum_for: to_enum
+    length: size
+    succ: next
+    succ!: next!
+    equal?: ==
+    eql?: ==
+    initialize_copy: replace
+    # Enumerable specific
+    collect: map
+    collect!: map!
+    collect_concat: flat_map
+    each_pair: each
+    detect: find
+    find_index: index
+    find_all: select
+    filter: select
+    filter!: select!
+    inject: reduce
+    member?: include?
+    append: push
+    prepend: unshift
+    update: merge!
+
+Style/SuperArguments:
+  Enabled: true
+
+Style/SuperWithArgsParentheses:
+  Enabled: true
+
+Style/SwapValues:
+  Enabled: true
+
+Style/SymbolArray:
+  Enabled: true
+  EnforcedStyle: brackets
+  MinSize: 3
+
+Style/SymbolLiteral:
+  Enabled: true
+
+Style/SymbolProc:
+  Enabled: false
+  AllowMethodsWithArguments: true
+  AllowComments: true
+
+Style/TernaryParentheses:
+  Enabled: true
+  EnforcedStyle: require_parentheses_when_complex
+  AllowSafeAssignment: true
+
+Style/TopLevelMethodDefinition:
+  Enabled: false
+
+Style/TrailingUnderscoreVariable:
+  Enabled: false
+  AllowNamedUnderscoreVariables: true
+
+Style/UnlessElse:
+  Enabled: true
+
+Style/UnlessLogicalOperators:
+  Enabled: true
+  EnforcedStyle: forbid_mixed_logical_operators
+
+Style/UnpackFirst:
+  Enabled: false
+
+Style/VariableInterpolation:
+  Enabled: true
+
+Style/WhenThen:
+  Enabled: true
+
+Style/WhileUntilModifier:
+  Enabled: false
+
+Style/WordArray:
+  Enabled: true
+  EnforcedStyle: percent
+  MinSize: 3
+
+Style/ZeroLengthPredicate:
+  Enabled: false
+
+Layout/LineLength:
+  Max: 120
+
+Lint/UselessAssignment:
+  Enabled: false
+
+Lint/AmbiguousBlockAssociation:
+  Enabled: false

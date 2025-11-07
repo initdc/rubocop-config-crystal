@@ -389,56 +389,140 @@ Style/MapToSet:
   Enabled: true
 
 Style/MethodCallWithArgsParentheses:
-  Enabled: false
-  # EnforcedStyle: require_parentheses
-  # IgnoreMacros: true
-  # AllowedMethods:
-  #   - grep
-  #   - grep_v
-  #   - is_a?
-  #   # Enumerable specific
-  #   - map
-  #   - map!
-  #   - flat_map
-  #   - find
-  #   - select
-  #   - select!
-  #   - reduce
-  #   # https://docs.ruby-lang.org/en/master/Kernel.html
-  #   # IO
-  #   - puts
-  #   - putc
-  #   - print
-  #   - printf
-  #   - p
-  #   - pp
-  #   - j
-  #   - jj
-  #   # Exceptions
-  #   - raise
-  #   - fail
-  #   # Querying
-  #   - test
-  #   # Exiting
-  #   - abort
-  #   - exit
-  #   - exit!
-  #   # Subprocesses
-  #   - system
-  #   # Other
-  #   - eval
-  #   - sleep
-  #   - sprintf
-  #   - format
-  #   - trap
-  #   - warn
-  # AllowedPatterns:
-  #   - ^assert
-  #   - ^expect
-  # AllowParenthesesInMultilineCall: false
-  # AllowParenthesesInChaining: true
-  # AllowParenthesesInCamelCaseMethod: false
-  # AllowParenthesesInStringInterpolation: false
+  Enabled: true
+  EnforcedStyle: require_parentheses
+  IgnoreMacros: true
+  AllowedMethods:
+    # Keyword
+    - yield
+
+    # Class
+    - extend
+    - include
+    - alias_method
+    - define_method
+
+    # Regexp
+    - grep
+    - grep_v
+    - match
+    - match?
+    - sub
+    - sub!
+    - gusb
+    - gsub!
+
+    # Object
+    - is_a?
+    - instance_of?
+
+    # Enumerable specific
+    - map
+    - map!
+    - flat_map
+    - find
+    - select
+    - select!
+    - reduce
+
+    # https://docs.ruby-lang.org/en/master/Kernel.html
+    # IO
+    - puts
+    - putc
+    - print
+    # - printf
+    # - write
+    # - syswrite
+    - p
+    - pp
+    - j
+    - jj
+    - y
+    - warn
+
+    # String
+    # - sprintf
+    # - format
+
+    # Exceptions
+    - raise
+    - fail
+    - throw
+    - catch
+
+    # Querying
+    - test
+
+    # Loading
+    - autoload
+    - autoload?
+    - load
+    - eval
+
+    # Exiting
+    - abort
+    - exit
+    - exit!
+    - trap
+
+    # Subprocesses
+    - exec
+    - spawn
+    - wait
+    - wait2
+    - system
+    - syscall
+
+    # Other
+    - sleep
+    - flunk
+
+    # Traceing
+    - caller
+    - caller_locations
+    - set_trace_func
+    - trace_var
+    - untrace_var
+
+    # https://rspec.rubystyle.guide/
+    # Spec
+    - describe
+    - subject
+    - context
+    - it
+    - to
+    - not_to
+    - should
+    - eq
+    - by
+    - raise_error
+    - shared_examples
+    - it_behaves_like
+    - specify
+    - include_json
+
+    # Test
+    - omit
+    - refute
+  AllowedPatterns:
+    - ^be
+    - ^\w+\?$
+    - ^assert
+    - ^expect
+    - ^require
+    - ^attr
+    - ^class
+    - ^const
+    - ^method
+    - ^private
+    - ^public
+    - ^protected
+    - ^singleton
+    - ^instance
+  AllowParenthesesInMultilineCall: true
+  AllowParenthesesInChaining: true
+  AllowParenthesesInCamelCaseMethod: true
+  AllowParenthesesInStringInterpolation: true
 
 Style/MethodCallWithoutArgsParentheses:
   Enabled: true

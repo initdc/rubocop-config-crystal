@@ -9,7 +9,7 @@ on:
       - dev
 
 concurrency:
-  group: ${{ github.sha }}
+  group: ${{ github.workflow }}-${{ github.sha }}
   cancel-in-progress: true
 
 jobs:

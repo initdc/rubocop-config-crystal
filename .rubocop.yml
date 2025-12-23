@@ -697,7 +697,7 @@ Style/QuotedSymbols:
 
 Style/RaiseArgs:
   Enabled: true
-  EnforcedStyle: exploded
+  EnforcedStyle: compact
 
 Style/RandomWithOffset:
   Enabled: true

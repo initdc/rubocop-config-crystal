@@ -361,7 +361,7 @@ Style/KeywordParametersOrder:
 
 Style/Lambda:
   Enabled: true
-  EnforcedStyle: lambda
+  EnforcedStyle: literal
 
 Style/LambdaCall:
   Enabled: true
